@@ -9,7 +9,7 @@ and on iOS we don't have any public positive statement from the WebKit team yeat
 
 Safari on iOS -up to iOS 10 beta 1 at least- doesn't support the two main specs to make PWAs work: Service Workers and Web App Manifest.
 
-While Safari has supported Home Screen Web apps for years now,  the web app definitio is declared through meta tags and links, not the [W3C Web App Manifest](https://www.w3.org/TR/appmanifest/) spec.
+While Safari has supported Home Screen Web apps for years now,  the web app definition is declared through meta tags and links, not the [W3C Web App Manifest](https://www.w3.org/TR/appmanifest/) spec.
 
 This project started as an experiment to see how much of the WAM can we polyfill on iOS to figure out what we need from Apple to get WAM supported on iOS.
 
