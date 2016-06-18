@@ -38,17 +38,17 @@ You should not use hashes (#) for your current SPA's navigation for this experim
 
 ## Supported features
 
-- name and short_name
-- start_url (within the same origin; other restrictions apply)
-- icons (it will take the best one for that device; creating iOS-specific icons
+- *name* and *short_name*
+- *start_url* (within the same origin; other restrictions apply)
+- *icons* (it will take the best one for that device; creating iOS-specific icons
  recommended with sizes: iPhone/iPod (120, 180), iPad (76, 96, 162, 167)
-- related_applications (use itunes as platform, and id for App's id)
-- background_color: creates a valid launch screen dynamically - it's now disables because from iOS 9.2 - 10 beta 1 launch images are broken :(
+- *related_applications* (use itunes as platform, and id for App's id)
+- *background_color*: creates a valid launch screen dynamically - it's now disables because from iOS 9.2 - 10 beta 1 launch images are broken :(
 
 ## Limitations
 
 - The *display* media query is not available (you should use navigator.standalone to check status)
-- You must understand the challenges when you opt-in for full screen on iOS. Check [Don't use iOS Meta Tags irresponsibly]https://medium.com/@firt/dont-use-ios-web-app-meta-tag-irresponsibly-in-your-progressive-web-apps-85d70f4438cb being the most important ones: there is no back button and OAuth logins may not work.
+- You must understand the challenges when you opt-in for full screen on iOS. Check [Don't use iOS Meta Tags irresponsibly](https://medium.com/@firt/dont-use-ios-web-app-meta-tag-irresponsibly-in-your-progressive-web-apps-85d70f4438cb) being the most important ones: there is no back button and OAuth logins may not work.
 - Service Workers can't be simulated without a big architecture change. I've been trying to use AppCache at least to cache the start_url with no luck because the AppCache's manifest must be declared in the HTML at the initial parsing, so nothing happens if you inject an AppCache's manifest dynamically. If you want offline support, use AppCache manually. 
 
 ## Next steps
@@ -63,3 +63,9 @@ You should not use hashes (#) for your current SPA's navigation for this experim
 - Restore internal URL session when the user goes back from background
 - Web App Banners: analyze the optional addition of an App Banner using a library such as [ATH](http://cubiq.org/add-to-home-screen), making a polyfill for beforeinstallprompt event
 
+## The Author
+
+Maximiliano Firtman
+[@firt](http://www.twitter.com/firt)
+Author of [High Performance Mobile Web](http://firt.mobi/hpmw) and [Programming the Mobile Web](http://firt.mobi/pmw)
+www.firt.mobi 
