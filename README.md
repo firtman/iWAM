@@ -63,6 +63,7 @@ You should not use hashes (#) for your current SPA's navigation for this experim
 - Restore internal URL session when the user goes back from background
 - Web App Banners: analyze the optional addition of an App Banner using a library such as [ATH](http://cubiq.org/add-to-home-screen), making a polyfill for beforeinstallprompt event
 - *start_url*, inject the hash also when the URL changes
+- *icon*, make a base64 version to reduce bugs on latest version of iOS that doesn't the icon at first attempt randomly
 
 ## The Author
 
