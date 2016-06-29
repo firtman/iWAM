@@ -43,7 +43,7 @@ You should not use hashes (#) for your current SPA's navigation for this experim
 - *icons* (it will take the best one for that device; creating iOS-specific icons
  recommended with sizes: iPhone/iPod (120, 180), iPad (76, 96, 162, 167)
 - *related_applications* (use itunes as platform, and id for App's id)
-- *background_color*: creates a valid launch screen dynamically - it's now disables because from iOS 9.2 - 10 beta 1 launch images are broken :(
+- *background_color*: creates a valid launch screen dynamically - it's now disabled because from iOS 9.2 - 10 beta 1 launch images are broken :(
 
 ## Limitations
 
